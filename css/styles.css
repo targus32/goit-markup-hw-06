@@ -507,7 +507,6 @@ ul {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--accent-color);
-  margin-left: 5px;
 }
 .text-check span {
   width: 16px;
