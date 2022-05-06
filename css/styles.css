@@ -522,11 +522,9 @@ ul {
 }
 .check-icon {
   fill: transparent;
+  transition: fill var(--time) var(--cubic);
 }
-/* .input-check {
-  transition: fill var(--time) var(--cubic),
-    background-color 2000ms var(--cubic); 
-}*/
+
 .input-check:checked + .text-check span {
   background-color: var(--accent-color);
   border: none;
