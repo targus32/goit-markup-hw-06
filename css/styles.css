@@ -307,7 +307,7 @@ ul {
   justify-content: center;
   align-items: center;
   fill: #afb1b8;
-  background-color: #ffffff;
+
   transition: background-color var(--time) var(--cubic),
     fill var(--time) var(--cubic);
 }
@@ -406,6 +406,7 @@ ul {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  padding: 40px;
 }
 .modal-button-close {
   position: absolute;
@@ -432,18 +433,15 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  padding-top: 40px;
   margin-bottom: 12px;
 }
 .modal-field {
   display: flex;
   flex-direction: column;
-  padding-right: 40px;
-  padding-left: 40px;
+  margin-bottom: 10px;
 }
 .modal-input {
   position: relative;
-  margin-bottom: 10px;
 }
 .modal-name {
   font-size: 12px;
@@ -491,7 +489,6 @@ ul {
   transform: translateY(-50%);
 }
 .modal-check {
-  padding-left: 52px;
   margin-bottom: 30px;
 }
 .text-check {
@@ -501,6 +498,7 @@ ul {
   color: var(--primary-text-color);
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .check-conditions {
   font-size: 14px;
@@ -522,6 +520,8 @@ ul {
 .check-icon {
   fill: transparent;
   transition: fill var(--time) var(--cubic);
+  width: 16px;
+  height: 15px;
 }
 
 .input-check:checked + .text-check span {
@@ -535,7 +535,8 @@ ul {
 .modal-button-send {
   width: 200px;
   height: 50px;
-  margin-left: 164px;
+  margin-left: auto;
+  margin-right: auto;
 
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -699,6 +700,9 @@ ul {
 .footer-input-flex {
   display: flex;
 }
+.footer-input {
+  color: var(--primary-white-color);
+}
 .footer-form input {
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -727,6 +731,7 @@ ul {
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
 
   font-weight: 700;
   font-size: 16px;
