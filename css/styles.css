@@ -423,7 +423,8 @@ ul {
   outline: none;
   transition: fill var(--time) var(--cubic);
 }
-.modal-button-close:hover {
+.modal-button-close:hover,
+.modal-button-close:focus {
   fill: var(--accent-color);
 }
 .modal h2 {
@@ -436,14 +437,13 @@ ul {
   margin-bottom: 12px;
 }
 .modal-field {
-  display: flex;
-  flex-direction: column;
   margin-bottom: 10px;
 }
 .modal-input {
   position: relative;
 }
 .modal-name {
+  display: block;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
@@ -458,8 +458,7 @@ ul {
   border-radius: 4px;
   padding-left: 42px;
   outline: none;
-  transition: fill var(--time) var(--cubic),
-    border-color var(--time) var(--cubic);
+  transition: border-color var(--time) var(--cubic);
 }
 
 .modal-input-name:focus {
@@ -487,6 +486,7 @@ ul {
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
+  transition: fill var(--time) var(--cubic);
 }
 .modal-check {
   margin-bottom: 30px;
@@ -515,7 +515,8 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color var(--time) var(--cubic);
+  transition: background-color var(--time) var(--cubic),
+    border var(--time) var(--cubic);
 }
 .check-icon {
   fill: transparent;
